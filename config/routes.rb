@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get "transactions/index"
+  get "transactions/new"
+  get "transactions/create"
+  get "transactions/edit"
+  get "transactions/update"
+  get "transactions/destroy"
   get "dashboard/index"
   devise_for :users
   devise_for :admins

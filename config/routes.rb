@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get "budgets/index"
+  get "budgets/new"
+  get "budgets/create"
+  get "budgets/edit"
+  get "budgets/update"
+  get "budgets/destroy"
   get "transactions/index"
   get "transactions/new"
   get "transactions/create"

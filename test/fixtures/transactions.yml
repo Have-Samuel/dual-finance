@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  category: one
+   recipient: MyString
+  avatar: MyString
+  amount_cent: 1
+  direction: 1
+  occurred_on: 2026-09-21
+
+two:
+  user: two
+  category: two
+   recipient: MyString
+  avatar: MyString
+  amount_cent: 1
+  direction: 1
+  occurred_on: 2026-09-21

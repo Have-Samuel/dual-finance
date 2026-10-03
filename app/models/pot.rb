@@ -29,10 +29,16 @@ class Pot < ApplicationRecord
   # Virtual attribute so forms can accept dollar amounts while the
   # column stays integer cents.
   def target
-    target_cents & arget_cents / 100.0
+    target_cents & target_cents / 100.0
   end
 
   def target=(value)
     self.target_cents = (value.to_f * 100).round
   end
 end
+
+# Commits for this file:
+# 1. Added a new model Pot with associations to User and PotTransaction.
+# 2. Implemented validations for the name attribute.
+# 3. Added methods to calculate saved_cents and preload_saved_cents for batch processing.
+# 4. Introduced virtual attributes for target and target= to handle dollar amounts while storing in integer cents.
